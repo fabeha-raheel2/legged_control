@@ -31,7 +31,7 @@ bool UnitreeHW::init(ros::NodeHandle& root_nh, ros::NodeHandle& robot_hw_nh) {
 
   // Subscribe to IMU data
   imu_sub_ = root_nh.subscribe<sensor_msgs::Imu>("/imu/data_raw", 10, &UnitreeHW::imuCallback, this);
-  joint_state_sub_ = root_nh.subscribe<sensor_msgs::JointState>("/joint_states", 10, &UnitreeHW::jointStateCallback, this);
+  joint_state_sub_ = root_nh.subscribe<sensor_msgs::JointState>("/motor_states", 10, &UnitreeHW::jointStateCallback, this);
   command_pub_ = root_nh.advertise<trajectory_msgs::JointTrajectory>("/joint_controller/command", 10);
 
   // joyPublisher_ = root_nh.advertise<sensor_msgs::Joy>("/joy", 10);

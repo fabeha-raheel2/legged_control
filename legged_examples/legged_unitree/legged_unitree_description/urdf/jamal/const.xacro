@@ -27,7 +27,8 @@
     <!-- kinematic value -->
     <xacro:property name="thigh_offset" value="0.08"/>
     <xacro:property name="thigh_length" value="0.225"/>
-    <xacro:property name="calf_length" value="0.235"/>
+    <!-- <xacro:property name="calf_length" value="0.235"/> -->
+    <xacro:property name="calf_length" value="0.250"/>
 
     <!-- leg offset from trunk center value -->
     <xacro:property name="leg_offset_x" value="0.26209"/>
