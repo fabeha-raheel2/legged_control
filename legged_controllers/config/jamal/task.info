@@ -161,17 +161,17 @@ initialState
 
    ;; Leg Joint Positions: [LF, LH, RF, RH] ;;
    (12,0) 0.0   ; LF_HAA
-   (13,0)  0.794  ; LF_HFE
-   (14,0) -1.22   ; LF_KFE
+   (13,0)  1.06  ; LF_HFE
+   (14,0) -1.71   ; LF_KFE
    (15,0) 0.0   ; LH_HAA
-   (16,0)  0.794   ; LH_HFE
-   (17,0) -1.22   ; LH_KFE
+   (16,0)  1.13   ; LH_HFE
+   (17,0) -1.71   ; LH_KFE
    (18,0)  0.0   ; RF_HAA
-   (19,0)  0.794   ; RF_HFE
-   (20,0) -1.22   ; RF_KFE
+   (19,0)  1.06   ; RF_HFE
+   (20,0) -1.71   ; RF_KFE
    (21,0)  0.0   ; RH_HAA
-   (22,0)  0.794   ; RH_HFE
-   (23,0) -1.22   ; RH_KFE
+   (22,0)  1.13   ; RH_HFE
+   (23,0) -1.71   ; RH_KFE
 }
 
 ; standard state weight matrix

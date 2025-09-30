@@ -84,7 +84,8 @@
                 <material name="orange"/>
             </visual>
             <collision>
-                <origin rpy="0 ${pi/2.0+0.1} 0" xyz="${thigh_x_offset} 0 ${-thigh_length/2.0}"/>
+                <!-- <origin rpy="0 ${pi/2.0+0.1} 0" xyz="${thigh_x_offset} 0 ${-thigh_length/2.0}"/> -->
+                <origin rpy="0 ${pi/2.0} 0" xyz="${thigh_x_offset} 0 ${-thigh_length/2.0}"/>
                 <geometry>
                     <box size="${thigh_length} ${thigh_width} ${thigh_height}"/>
                 </geometry>
@@ -116,7 +117,8 @@
 
         <link name="${prefix}_calf">
             <visual>
-                <origin rpy="0 0.06 0" xyz="0 0 0"/>
+                <!-- <origin rpy="0 0.06 0" xyz="0 0 0"/> -->
+                <origin rpy="0 0 0" xyz="0 0 0"/>
                 <geometry>
                     <mesh filename="${mesh_path}/calf.dae"
                           scale="1 1 1"/>
