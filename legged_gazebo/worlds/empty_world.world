@@ -10,13 +10,56 @@
             <real_time_update_rate>1000</real_time_update_rate>
             <iters>500</iters>
         </physics>
+        
         <!-- A global light source -->
         <include>
             <uri>model://sun</uri>
         </include>
+        
         <!-- A ground plane -->
         <include>
             <uri>model://ground_plane</uri>
         </include>
     </world>
 </sdf>
+        <!-- A rectangular box -->
+        <!-- <model name="rect_box">
+            <pose>0 0 0.225 0 0 0</pose> <!-- x y z roll pitch yaw -->
+            <link name="link">
+                <!-- Inertia and Mass -->
+                <inertial>
+                    <mass>100.0</mass>
+                    <!-- Optional inertia matrix (Gazebo can auto-compute if omitted) -->
+                    <inertia>
+                        <ixx>0.625</ixx>
+                        <iyy>0.625</iyy>
+                        <izz>0.225</izz>
+                        <ixy>0.0</ixy>
+                        <ixz>0.0</ixz>
+                        <iyz>0.0</iyz>
+                    </inertia>
+                </inertial>
+
+                <collision name="collision">
+                    <geometry>
+                        <box>
+                            <size>1 0.15 0.45</size>
+                        </box>
+                    </geometry>
+                </collision>
+
+                <visual name="visual">
+                    <geometry>
+                        <box>
+                            <size>1 0.15 0.45</size>
+                        </box>
+                    </geometry>
+                    <material>
+                        <ambient>0.3 0.6 0.9 1</ambient>
+                        <diffuse>0.3 0.6 0.9 1</diffuse>
+                    </material>
+                </visual>
+            </link>
+        </model> -->
+
+

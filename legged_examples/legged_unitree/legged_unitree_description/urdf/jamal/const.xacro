@@ -88,11 +88,11 @@
     <xacro:property name="hip_position_min" value="-0.863"/>
     <xacro:property name="hip_velocity_max" value="8"/>
     <xacro:property name="hip_torque_max" value="48"/>
-    <xacro:property name="thigh_position_max" value="4.501"/>
-    <xacro:property name="thigh_position_min" value="-0.686"/>
+    <xacro:property name="thigh_position_max" value="1.57"/>
+    <xacro:property name="thigh_position_min" value="-1.57"/>
     <xacro:property name="thigh_velocity_max" value="8"/>
     <xacro:property name="thigh_torque_max" value="48"/>
-    <xacro:property name="calf_position_max" value="-0.888"/>
+    <xacro:property name="calf_position_max" value="2.818"/>
     <xacro:property name="calf_position_min" value="-2.818"/>
     <xacro:property name="calf_velocity_max" value="8"/>
     <xacro:property name="calf_torque_max" value="48"/>

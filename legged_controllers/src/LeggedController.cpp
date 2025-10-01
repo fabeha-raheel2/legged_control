@@ -16,6 +16,7 @@
 #include <ocs2_ros_interfaces/common/RosMsgConversions.h>
 #include <ocs2_ros_interfaces/synchronized_module/RosReferenceManager.h>
 #include <ocs2_sqp/SqpMpc.h>
+#include <ocs2_ddp/GaussNewtonDDP_MPC.h>
 
 #include <angles/angles.h>
 #include <legged_estimation/FromTopiceEstimate.h>
@@ -207,6 +208,8 @@ void LeggedController::setupLeggedInterface(const std::string& taskFile, const s
 void LeggedController::setupMpc() {
   mpc_ = std::make_shared<SqpMpc>(leggedInterface_->mpcSettings(), leggedInterface_->sqpSettings(),
                                   leggedInterface_->getOptimalControlProblem(), leggedInterface_->getInitializer());
+  // mpc_ = std::make_shared<GaussNewtonDDP_MPC>(leggedInterface_->mpcSettings(), leggedInterface_->ddpSettings(), leggedInterface_->getRollout(),
+  //                                 leggedInterface_->getOptimalControlProblem(), leggedInterface_->getInitializer());
   rbdConversions_ = std::make_shared<CentroidalModelRbdConversions>(leggedInterface_->getPinocchioInterface(),
                                                                     leggedInterface_->getCentroidalModelInfo());
 
